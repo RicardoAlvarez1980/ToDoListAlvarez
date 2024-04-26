@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo List</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoList</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+  <div class="container mt-5">
+    <h1 class="mb-4">TodoList</h1>
+    <div class="input-group mb-3">
+      <input type="text" id="taskInput" class="form-control" placeholder="Ingrese una tarea">
+      <div class="input-group-append">
+        <button class="btn btn-primary btn-add" type="button" onclick="addTask()">Agregar</button>
+      </div>
+    </div>
+    <ul id="taskList" class="list-group">
+    </ul>
+  </div>
 
-    
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 </html>
